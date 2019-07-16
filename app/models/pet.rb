@@ -19,7 +19,7 @@ class Pet < ApplicationRecord
   scope :older_animals, -> {where("age > ?",7)}
   scope :dogs, -> {where(species: "Dog")}
   scope :cats, -> {where(species: "Cat")}
-  scope :fish, -> {where(species: "Fish")}
+  scope :horses, -> {where(species: "Horse")}
 
   scope :search_by_age, -> (search_age){where("age > ?", search_age)}
 
